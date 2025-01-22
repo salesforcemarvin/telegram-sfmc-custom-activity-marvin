@@ -48,8 +48,8 @@ app.post("/execute", async function (req, res) {
   console.log("-------REQUEST------");
 
   //TODO: To replace
-  let channel = "@bpisalesforce";
-  const token = "7598854488:AAEMWBOFypqRJy5VvgOj-b10u0QrXpC1fXk";
+  let channel = "@salesforcemarvin";
+  const token = "7019771952:AAGIrCfMypBhos-AJokHu-M4DKWIwnbqsfs";
   const telegramAPI = "https://api.telegram.org/bot";
   const url = `${telegramAPI}${token}`;
 
