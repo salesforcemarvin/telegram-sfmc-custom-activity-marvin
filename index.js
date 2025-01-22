@@ -48,8 +48,8 @@ app.post("/execute", async function (req, res) {
   console.log("-------REQUEST------");
 
   //TODO: To replace
-  let channel = "@bpisalesforce";
-  const token = "7598854488:AAEMWBOFypqRJy5VvgOj-b10u0QrXpC1fXk";
+  let channel = "@salesforcemarvin";
+  const token = "7019771952:AAGIrCfMypBhos-AJokHu-M4DKWIwnbqsfs";
   const telegramAPI = "https://api.telegram.org/bot";
   const url = `${telegramAPI}${token}`;
 
@@ -84,6 +84,7 @@ app.post("/execute", async function (req, res) {
         messenger = `photo=${photo}&caption=${customMessage}&parse_mode=HTML`;
         //const response = await axios.get(`${endpoint}?chat_id=${channel}&photo=${photo}&caption=${customMessage}&parse_mode=HTML`);        
         //https://api.telegram.org/bot7598854488:AAEMWBOFypqRJy5VvgOj-b10u0QrXpC1fXk/sendPhoto?chat_id=@bpisalesforce&photo=https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg&caption=qwertyyyyyyyyyyy&parse_mode=HTML
+        //https://api.telegram.org/bot7019771952:AAGIrCfMypBhos-AJokHu-M4DKWIwnbqsfs/sendPhoto?chat_id=@salesforcemarvin&photo=https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg&caption=This message was triggered using Marketing Cloud Journey Builder by Marvin&parse_mode=HTML
       } else {
         endpoint = `${url}/sendMessage`;
         messenger = `text=${customMessage}`;
